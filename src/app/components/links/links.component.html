@@ -1,5 +1,7 @@
 <ul class="linksList">
+  @for (link of links; track link.url) {
     <li>
-        <a href="">Esse é um link</a>
+      <a href="{{ link.url }}">{{ link.title }}</a>
     </li>
+  }
 </ul>
